@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #225e14;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.game-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+.card {
+    display: inline-block;
+    width: 50px;
+    height: 70px;
+    background-color: white;
+    color: black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.dealer-area {
+    margin-bottom: 30px;
+}
+
+
+.other-players-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.player-spot {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+}
+
+.player-spot h3 {
+    margin-top: 0;
+    color: #ddd;
+    font-size: 1.2em;
+}
+
+.main-player {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.cards-container {
+    min-height: 100px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.score {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.game-controls {
+    margin-top: 30px;
+}
+
+.game-messages {
+    margin-top: 20px;
+}
+
+#game-status, #hint-result {
+    margin: 10px 0;
+    min-height: 20px;
+}
+
+@media (max-width: 900px) {
+    .other-players-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .player-spot {
+        margin: 5px 0;
+    }
+
+    .card {
+        width: 40px;
+        height: 56px;
+        line-height: 56px;
+        font-size: 16px;
+    }
+}

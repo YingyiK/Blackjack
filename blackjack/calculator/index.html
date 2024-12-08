@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Strategy Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blackjack Strategy Calculator</h1>
+        
+        <div class="input-section">
+            <h2>Input Cards</h2>
+            <p class="instruction">Enter cards separated by commas (2-10, J, Q, K, A)</p>
+            
+            <div class="input-group">
+                <label for="player-cards">Your Cards:</label>
+                <input type="text" id="player-cards" placeholder="e.g., A,7">
+            </div>
+
+            <div class="input-group">
+                <label for="dealer-upcard">Dealer's Up Card:</label>
+                <input type="text" id="dealer-upcard" placeholder="e.g., K">
+            </div>
+
+            <div class="input-group">
+                <label for="player1-cards">Player 1 Cards:</label>
+                <input type="text" id="player1-cards" placeholder="e.g., 10,J">
+            </div>
+
+            <div class="input-group">
+                <label for="player2-cards">Player 2 Cards:</label>
+                <input type="text" id="player2-cards" placeholder="e.g., 8,9">
+            </div>
+
+            <div class="button-group">
+                <button id="calculate-button">Calculate</button>
+                <button id="clear-button">Clear</button>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <div class="nash-results">
+                <h2>Nash Equilibrium Analysis</h2>
+                <div id="nash-probability">
+                    <p>Hit for Improvement: <!-- updated label --></p>
+                    <p>Hit and Bust: <!-- new line added --></p>
+                    <p>Stand and Win: <!-- updated label --></p>
+                </div>
+                <div id="nash-calculation" class="calculation-details"></div>
+            </div>
+
+            <div class="markov-results">
+                <h2>Markov Chain Analysis</h2>
+                <div id="markov-probability">
+                    <p>Current State: <!-- existing content --></p>
+                    <p>Hit and Win: <!-- updated label --></p> <!-- Updated label -->
+                    <p>Stand and Win: <!-- updated label --></p> <!-- Updated label -->
+                </div>
+                <div id="markov-calculation" class="calculation-details"></div>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
