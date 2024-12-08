@@ -1,7 +1,9 @@
 # Blackjack Game and Winning Probability Calculator
 
 This project includes two interconnected websites:
+
 **Blackjack Game:** A web-based implementation of the classic Blackjack game.
+
 **Winning Probability Calculator:** A tool to calculate the winning probabilities in Blackjack using advanced mathematical strategies.
 
 ## Features
